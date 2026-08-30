@@ -3,12 +3,14 @@ import packageJson from "../../package.json";
 const currentYear = new Date().getFullYear();
 
 export const APP_CONFIG = {
-  name: "Studio Admin",
+  name: "Nexora Finance",
+  shortName: "Nexora",
+  tagline: "Financial Management Platform",
   version: packageJson.version,
-  copyright: `© ${currentYear}, Studio Admin.`,
+  copyright: `© ${currentYear}, Nexora Finance. Portfolio demonstration only.`,
   meta: {
-    title: "Studio Admin - Modern Next.js Dashboard Starter Template",
+    title: "Nexora Finance - Financial Management Platform",
     description:
-      "Studio Admin is a modern, open-source dashboard starter template built with Next.js 16, Tailwind CSS v4, and shadcn/ui. Perfect for SaaS apps, admin panels, and internal tools—fully customizable and production-ready.",
+      "Nexora Finance is a frontend-only financial management and accounting platform demonstration built with Next.js, TypeScript, Tailwind CSS, and shadcn/ui. Fictional data only — not connected to any bank, payment provider, or accounting system.",
   },
 };
