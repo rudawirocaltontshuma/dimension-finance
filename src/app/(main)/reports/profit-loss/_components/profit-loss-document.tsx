@@ -94,7 +94,7 @@ export function ProfitLossDocument() {
 
           <tr>
             <td colSpan={5} className="pt-3 pb-1 font-semibold text-sm">
-              <span className="border-t pt-2 block">Gross Profit ({formatPercent(p.grossMargin)} margin)</span>
+              <span className="block border-t pt-2">Gross Profit ({formatPercent(p.grossMargin)} margin)</span>
             </td>
             <td colSpan={4} />
           </tr>

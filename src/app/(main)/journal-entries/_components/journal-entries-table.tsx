@@ -2,7 +2,13 @@
 
 import * as React from "react";
 
-import { type ColumnFiltersState, type PaginationState, type SortingState, useTable } from "@tanstack/react-table";
+import {
+  type ColumnFiltersState,
+  type ColumnVisibilityState,
+  type PaginationState,
+  type SortingState,
+  useTable,
+} from "@tanstack/react-table";
 
 import { FinanceDataTable } from "@/components/finance/data-table";
 import { TableFilterSelect, TableSearchInput } from "@/components/finance/table-controls";
@@ -16,17 +22,19 @@ import { journalEntriesColumns } from "./journal-entries-columns";
 export function JournalEntriesTable({ entries }: { entries: JournalEntry[] }) {
   const [sorting, setSorting] = React.useState<SortingState>([{ id: "date", desc: true }]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([]);
+  const [columnVisibility, setColumnVisibility] = React.useState<ColumnVisibilityState>({ search: false });
   const [pagination, setPagination] = React.useState<PaginationState>({ pageIndex: 0, pageSize: 20 });
 
   const table = useTable({
     features: dataTableFeatures,
     data: entries,
     columns: journalEntriesColumns,
-    state: { sorting, columnFilters, pagination },
+    state: { sorting, columnFilters, columnVisibility, pagination },
     getRowId: (row) => row.id,
     autoResetPageIndex: false,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
+    onColumnVisibilityChange: setColumnVisibility,
     onPaginationChange: setPagination,
   });
 

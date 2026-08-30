@@ -3,7 +3,13 @@
 import * as React from "react";
 
 import type { ColumnDef } from "@tanstack/react-table";
-import { type ColumnFiltersState, type PaginationState, type SortingState, useTable } from "@tanstack/react-table";
+import {
+  type ColumnFiltersState,
+  type ColumnVisibilityState,
+  type PaginationState,
+  type SortingState,
+  useTable,
+} from "@tanstack/react-table";
 
 import { FinanceDataTable } from "@/components/finance/data-table";
 import { ExportPreviewButton } from "@/components/finance/demo-actions";
@@ -27,6 +33,7 @@ function statusBadgeClass(status: CreditNote["status"]) {
 export function CreditNotesTable({ creditNotes }: { creditNotes: CreditNote[] }) {
   const [sorting, setSorting] = React.useState<SortingState>([{ id: "date", desc: true }]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([]);
+  const [columnVisibility, setColumnVisibility] = React.useState<ColumnVisibilityState>({ search: false });
   const [pagination, setPagination] = React.useState<PaginationState>({ pageIndex: 0, pageSize: 20 });
   const [selected, setSelected] = React.useState<CreditNote | null>(null);
 
@@ -86,11 +93,12 @@ export function CreditNotesTable({ creditNotes }: { creditNotes: CreditNote[] })
     features: dataTableFeatures,
     data: creditNotes,
     columns,
-    state: { sorting, columnFilters, pagination },
+    state: { sorting, columnFilters, columnVisibility, pagination },
     getRowId: (row) => row.id,
     autoResetPageIndex: false,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
+    onColumnVisibilityChange: setColumnVisibility,
     onPaginationChange: setPagination,
   });
 

@@ -7,6 +7,7 @@ import Link from "next/link";
 import {
   type ColumnDef,
   type ColumnFiltersState,
+  type ColumnVisibilityState,
   type PaginationState,
   type SortingState,
   useTable,
@@ -33,6 +34,7 @@ function statusClass(status: PayablePayment["status"]) {
 export function PayablePaymentsTable({ payments }: { payments: PayablePayment[] }) {
   const [sorting, setSorting] = React.useState<SortingState>([{ id: "date", desc: true }]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([]);
+  const [columnVisibility, setColumnVisibility] = React.useState<ColumnVisibilityState>({ search: false });
   const [pagination, setPagination] = React.useState<PaginationState>({ pageIndex: 0, pageSize: 20 });
 
   const columns = React.useMemo<ColumnDef<DataTableFeatures, PayablePayment>[]>(
@@ -99,11 +101,12 @@ export function PayablePaymentsTable({ payments }: { payments: PayablePayment[] 
     features: dataTableFeatures,
     data: payments,
     columns,
-    state: { sorting, columnFilters, pagination },
+    state: { sorting, columnFilters, columnVisibility, pagination },
     getRowId: (row) => row.id,
     autoResetPageIndex: false,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
+    onColumnVisibilityChange: setColumnVisibility,
     onPaginationChange: setPagination,
   });
 

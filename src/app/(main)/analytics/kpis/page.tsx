@@ -43,7 +43,7 @@ export default function FinancialKpisPage() {
                   <span className="font-medium text-muted-foreground text-xs uppercase tracking-wide">{kpi.label}</span>
                   <Icon className={cn("size-4", trendColor[kpi.trend])} />
                 </div>
-                <p className="font-semibold text-2xl tracking-tight tabular-nums">{kpi.value}</p>
+                <p className="font-semibold text-2xl tabular-nums tracking-tight">{kpi.value}</p>
                 <p className="text-muted-foreground text-xs">{kpi.description}</p>
               </CardContent>
             </Card>

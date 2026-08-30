@@ -5,6 +5,7 @@ import * as React from "react";
 import {
   type ColumnDef,
   type ColumnFiltersState,
+  type ColumnVisibilityState,
   type PaginationState,
   type SortingState,
   useTable,
@@ -32,6 +33,7 @@ function statusBadgeClass(status: DebitNote["status"]) {
 export function DebitNotesTable({ debitNotes }: { debitNotes: DebitNote[] }) {
   const [sorting, setSorting] = React.useState<SortingState>([{ id: "date", desc: true }]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([]);
+  const [columnVisibility, setColumnVisibility] = React.useState<ColumnVisibilityState>({ search: false });
   const [pagination, setPagination] = React.useState<PaginationState>({ pageIndex: 0, pageSize: 20 });
   const [selected, setSelected] = React.useState<DebitNote | null>(null);
 
@@ -91,11 +93,12 @@ export function DebitNotesTable({ debitNotes }: { debitNotes: DebitNote[] }) {
     features: dataTableFeatures,
     data: debitNotes,
     columns,
-    state: { sorting, columnFilters, pagination },
+    state: { sorting, columnFilters, columnVisibility, pagination },
     getRowId: (row) => row.id,
     autoResetPageIndex: false,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
+    onColumnVisibilityChange: setColumnVisibility,
     onPaginationChange: setPagination,
   });
 
