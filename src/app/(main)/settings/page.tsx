@@ -8,7 +8,7 @@ import { NotificationSettingsForm } from "./_components/notification-settings-fo
 import { NumberingSettingsForm } from "./_components/numbering-settings-form";
 import { SettingsNav } from "./_components/settings-nav";
 
-export const metadata = { title: "Company Settings | Nexora Finance" };
+export const metadata = { title: "Company Settings | Financial Management System" };
 
 export default function SettingsPage() {
   return (

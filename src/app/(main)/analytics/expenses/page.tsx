@@ -10,7 +10,7 @@ import {
   monthlyExpenseComparisonSeries,
 } from "@/data/analytics";
 
-export const metadata = { title: "Expense Analytics | Nexora Finance" };
+export const metadata = { title: "Expense Analytics | Financial Management System" };
 
 export default function ExpenseAnalyticsPage() {
   return (

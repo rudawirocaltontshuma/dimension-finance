@@ -12,7 +12,7 @@ const supplierOptions = suppliers.map((s) => ({ label: s.name, value: s.id }));
 const costCenterOptions = costCenters.map((c) => ({ label: c.name, value: c.name }));
 
 export const customerFormFields: FieldConfig[] = [
-  { name: "name", label: "Customer Name", type: "text", required: true, placeholder: "e.g. Nexora Retail Group" },
+  { name: "name", label: "Customer Name", type: "text", required: true, placeholder: "e.g. Solstice Retail Group" },
   { name: "industry", label: "Industry", type: "text", required: true, placeholder: "e.g. Retail" },
   { name: "contactName", label: "Primary Contact", type: "text", required: true, placeholder: "Contact person" },
   { name: "email", label: "Billing Email", type: "email", required: true, placeholder: "accounts@company.co.za" },

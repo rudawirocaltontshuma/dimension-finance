@@ -51,7 +51,7 @@ export const notifications: AppNotification[] = [
   },
   {
     id: "N-07",
-    title: "Customer Nexora Retail Group exceeded their credit limit.",
+    title: "Customer Solstice Retail Group exceeded their credit limit.",
     category: "receivables",
     timestamp: "2026-08-28T11:30:00Z",
     read: true,
@@ -91,7 +91,7 @@ export const notifications: AppNotification[] = [
   },
   {
     id: "N-12",
-    title: "Cash position for Nexora Payroll Account is below the reserve threshold.",
+    title: "Cash position for Argent Payroll Account is below the reserve threshold.",
     category: "banking",
     timestamp: "2026-08-26T09:44:00Z",
     read: true,

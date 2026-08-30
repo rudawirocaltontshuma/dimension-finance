@@ -4,7 +4,7 @@ import { transactions } from "@/data/transactions";
 
 import { GeneralLedgerTable } from "./_components/general-ledger-table";
 
-export const metadata = { title: "General Ledger | Nexora Finance" };
+export const metadata = { title: "General Ledger | Financial Management System" };
 
 export default function GeneralLedgerPage() {
   return (

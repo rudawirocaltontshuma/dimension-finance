@@ -11,7 +11,7 @@ import {
   revenueTrendSeries,
 } from "@/data/analytics";
 
-export const metadata = { title: "Revenue Analytics | Nexora Finance" };
+export const metadata = { title: "Revenue Analytics | Financial Management System" };
 
 export default function RevenueAnalyticsPage() {
   return (

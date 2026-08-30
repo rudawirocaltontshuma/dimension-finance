@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { BalanceSheetDocument } from "./_components/balance-sheet-document";
 import { BalanceSheetPrintButton } from "./_components/balance-sheet-print-button";
 
-export const metadata = { title: "Balance Sheet | Nexora Finance" };
+export const metadata = { title: "Balance Sheet | Financial Management System" };
 
 export default function BalanceSheetReportPage() {
   return (

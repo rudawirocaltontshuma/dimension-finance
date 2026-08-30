@@ -11,7 +11,7 @@ import { Card, CardAction, CardContent, CardHeader, CardTitle } from "@/componen
 import { assetStatusMeta, assets } from "@/data/assets";
 import { formatDateShort, formatMoney } from "@/lib/finance/format";
 
-export const metadata = { title: "Fixed Assets | Nexora Finance" };
+export const metadata = { title: "Fixed Assets | Financial Management System" };
 
 export default function FixedAssetsPage() {
   const totalCost = assets.reduce((sum, a) => sum + a.cost, 0);

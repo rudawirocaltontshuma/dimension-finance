@@ -3,7 +3,7 @@ import { creditNotes } from "@/data/creditNotes";
 
 import { CreditNotesTable } from "./_components/credit-notes-table";
 
-export const metadata = { title: "Credit Notes | Nexora Finance" };
+export const metadata = { title: "Credit Notes | Financial Management System" };
 
 export default function CreditNotesPage() {
   return (

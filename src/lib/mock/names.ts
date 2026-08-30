@@ -1,11 +1,11 @@
 /**
  * Fictional name, company, and place pools used to build realistic-looking
- * mock records across the Nexora Finance demo. None of these refer to real
+ * mock records across the Financial Management System demo. None of these refer to real
  * businesses or people.
  */
 
 export const customerCompanyNames = [
-  "Nexora Retail Group",
+  "Solstice Retail Group",
   "Harborline Logistics",
   "Kestrel Manufacturing Co.",
   "Silverbrook Estates",

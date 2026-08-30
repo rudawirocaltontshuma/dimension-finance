@@ -9,7 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { reportCatalog } from "@/data/reports";
 import { formatDateShort } from "@/lib/finance/format";
 
-export const metadata = { title: "Report Center | Nexora Finance" };
+export const metadata = { title: "Report Center | Financial Management System" };
 
 export default function ReportCenterPage() {
   return (

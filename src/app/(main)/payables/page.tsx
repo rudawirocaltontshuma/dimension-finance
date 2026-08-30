@@ -16,7 +16,7 @@ import { suppliers } from "@/data/suppliers";
 import { agingBuckets, buildAgingReport, summarizeAging } from "@/lib/finance/aging";
 import { formatDateShort, formatMoney } from "@/lib/finance/format";
 
-export const metadata = { title: "Payables Overview | Nexora Finance" };
+export const metadata = { title: "Payables Overview | Financial Management System" };
 
 const activeBills = bills.filter((b) => b.status !== "Disputed" && b.status !== "Draft");
 const TODAY = "2026-08-30";

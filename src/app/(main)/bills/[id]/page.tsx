@@ -12,7 +12,7 @@ import { BillPrintButton } from "./_components/bill-print-button";
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const bill = getBill(id);
-  return { title: bill ? `${bill.id} | Nexora Finance` : "Bill | Nexora Finance" };
+  return { title: bill ? `${bill.id} | Financial Management System` : "Bill | Financial Management System" };
 }
 
 export default async function BillDetailPage({ params }: { params: Promise<{ id: string }> }) {

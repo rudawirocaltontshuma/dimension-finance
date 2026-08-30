@@ -15,7 +15,7 @@ interface DemoActionButtonProps extends React.ComponentProps<typeof Button> {
 
 /**
  * A button that performs no real action beyond showing a toast — used for
- * every "demo only" affordance across Nexora Finance (exports, approvals,
+ * every "demo only" affordance across Financial Management System (exports, approvals,
  * reconciliation, saves) so interactions feel real without any backend.
  */
 export function DemoActionButton({ message, label, icon, onClick, ...props }: DemoActionButtonProps) {

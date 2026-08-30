@@ -3,7 +3,7 @@ import { debitNotes } from "@/data/debitNotes";
 
 import { DebitNotesTable } from "./_components/debit-notes-table";
 
-export const metadata = { title: "Debit Notes | Nexora Finance" };
+export const metadata = { title: "Debit Notes | Financial Management System" };
 
 export default function DebitNotesPage() {
   return (

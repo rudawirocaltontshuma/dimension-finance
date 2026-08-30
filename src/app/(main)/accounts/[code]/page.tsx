@@ -21,7 +21,11 @@ import { formatDateShort } from "@/lib/finance/format";
 export async function generateMetadata({ params }: { params: Promise<{ code: string }> }) {
   const { code } = await params;
   const account = getAccount(code);
-  return { title: account ? `${account.code} · ${account.name} | Nexora Finance` : "Account | Nexora Finance" };
+  return {
+    title: account
+      ? `${account.code} · ${account.name} | Financial Management System`
+      : "Account | Financial Management System",
+  };
 }
 
 function StatTile({ label, value }: { label: string; value: ReactNode }) {

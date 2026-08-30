@@ -3,7 +3,7 @@ import { suppliers } from "@/data/suppliers";
 
 import { SuppliersTable } from "./_components/suppliers-table";
 
-export const metadata = { title: "Suppliers | Nexora Finance" };
+export const metadata = { title: "Suppliers | Financial Management System" };
 
 export default function SuppliersPage() {
   return (

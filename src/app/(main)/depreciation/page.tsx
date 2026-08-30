@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableFooter, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { depreciationRecords, depreciationTotals } from "@/data/depreciation";
 
-export const metadata = { title: "Depreciation | Nexora Finance" };
+export const metadata = { title: "Depreciation | Financial Management System" };
 
 export default function DepreciationPage() {
   return (

@@ -8,7 +8,7 @@ import { Switch } from "@/components/ui/switch";
 
 import { SettingsNav } from "../_components/settings-nav";
 
-export const metadata = { title: "Accounting Settings | Nexora Finance" };
+export const metadata = { title: "Accounting Settings | Financial Management System" };
 
 export default function AccountingSettingsPage() {
   return (

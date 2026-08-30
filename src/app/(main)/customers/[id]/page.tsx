@@ -19,7 +19,9 @@ import { formatDate, formatDateShort } from "@/lib/finance/format";
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const customer = getCustomer(id);
-  return { title: customer ? `${customer.name} | Nexora Finance` : "Customer | Nexora Finance" };
+  return {
+    title: customer ? `${customer.name} | Financial Management System` : "Customer | Financial Management System",
+  };
 }
 
 export default async function CustomerDetailPage({ params }: { params: Promise<{ id: string }> }) {

@@ -11,7 +11,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { bills } from "@/data/bills";
 import { agingBuckets, buildAgingReport, summarizeAging } from "@/lib/finance/aging";
 
-export const metadata = { title: "AP Aging Report | Nexora Finance" };
+export const metadata = { title: "AP Aging Report | Financial Management System" };
 
 export default function ApAgingReportPage() {
   const rows = buildAgingReport(
