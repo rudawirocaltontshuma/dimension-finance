@@ -42,7 +42,10 @@ function buildConfig(series: SeriesDef[]): ChartConfig {
 }
 
 interface BaseChartProps {
-  data: Record<string, unknown>[];
+  // `object[]` (rather than `Record<string, unknown>[]`) so arrays typed against a named
+  // `interface` (which has no implicit index signature) are accepted too — this component
+  // never indexes `data` itself, it only hands `dataKey` strings to Recharts at runtime.
+  data: readonly object[];
   xKey: string;
   series: SeriesDef[];
   height?: number;

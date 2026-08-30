@@ -4,14 +4,14 @@ const rng = createRng(77120);
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-export interface ForecastRow {
+export type ForecastRow = {
   period: string;
   isForecast: boolean;
   revenue: number;
   expenses: number;
   profit: number;
   cash: number;
-}
+};
 
 let cash = 2_180_000;
 let revenueBase = 610_000;
