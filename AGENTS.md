@@ -2,7 +2,7 @@
 
 ## Project overview
 
-Studio Admin is a responsive admin dashboard built with Next.js 16, React 19, TypeScript, Tailwind CSS v4, and shadcn/ui.
+Nexora Finance is a frontend-only financial management and accounting platform demonstration built with Next.js 16, React 19, TypeScript, Tailwind CSS v4, and shadcn/ui. It uses local mock data only — no backend, database, or authentication.
 
 This repository uses the shadcn `radix-nova` style. The shadcn CLI reports `base: "radix"`, which refers to Radix UI. Always inspect the local components in `src/components/ui/` because individual wrappers may use different primitives.
 
@@ -54,9 +54,10 @@ There is currently no automated test command. Run build, lint, check, or other v
 
 Keep feature code close to the route that owns it.
 
-- Dashboard routes: `src/app/(main)/dashboard/<screen>/page.tsx`
-- Screen-specific components, data, and schemas: `src/app/(main)/dashboard/<screen>/_components/`
-- Shared dashboard components: `src/app/(main)/dashboard/_components/`
+- Screen routes: `src/app/(main)/<screen>/page.tsx` (e.g. `src/app/(main)/invoices/page.tsx`)
+- Screen-specific components, data, and schemas: `src/app/(main)/<screen>/_components/`
+- Shared app shell (sidebar, header, command menu): `src/app/(main)/_components/`
+- Shared finance UI kit (KPI cards, data table, charts, forms): `src/components/finance/`
 - Shared application components: `src/components/`
 - Local shadcn components: `src/components/ui/`
 - Shared hooks and utilities: `src/hooks/` and `src/lib/`
@@ -66,7 +67,7 @@ Keep a component inside its route until it is reused by another feature. Do not 
 
 ## Creating or extending a screen
 
-1. Inspect the closest current screen before writing code. Finance, Infrastructure, CRM, and Analytics are useful references. Do not use routes under `(legacy)` as references for new screens unless maintaining a legacy route.
+1. Inspect the closest current screen before writing code — the Accounting, Receivables, and Reports modules are useful references for list/detail/report patterns.
 2. When reproducing a UI from a screenshot or image, follow its visual direction closely, including layout, hierarchy, spacing, component structure, and important details. Implement it with the project's existing components and semantic theme tokens rather than copying raw color values. If the design needs a color that is not available through the existing theme tokens, or the user explicitly requests a non-theme color, use a named color from Tailwind's default palette. Do not use arbitrary hex, RGB, HSL, or OKLCH values.
 3. Reuse the existing dashboard shell, local components, layout controls, and theme tokens.
 4. Break each new page into focused components inside the route's `_components/` directory. Keep `page.tsx` small and focused on composing those pieces.
