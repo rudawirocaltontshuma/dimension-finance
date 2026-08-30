@@ -10,7 +10,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { taxSummary } from "@/data/reports";
 import { formatMoney } from "@/lib/finance/format";
 
-export const metadata = { title: "Tax Summary | Nexora Finance" };
+export const metadata = { title: "Tax Summary | Financial Management System" };
 
 export default function TaxSummaryReportPage() {
   return (

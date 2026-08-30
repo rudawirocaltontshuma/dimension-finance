@@ -8,7 +8,7 @@ import { DashboardWidgets } from "./_components/dashboard-widgets";
 import { KpiRow } from "./_components/kpi-row";
 
 export const metadata = {
-  title: "Financial Overview | Nexora Finance",
+  title: "Financial Overview | Financial Management System",
 };
 
 export default function DashboardPage() {

@@ -3,7 +3,7 @@ import type { CurrencyCode } from "@/types/finance";
 
 /**
  * Formats an amount as a currency string in the "R 1,284,500.00" style used
- * throughout Nexora Finance. Uses a fixed en-US grouping so output is stable
+ * throughout Financial Management System. Uses a fixed en-US grouping so output is stable
  * regardless of server/client ICU locale data, then swaps in the currency
  * symbol — no live conversion, no locale-driven symbol placement quirks.
  */

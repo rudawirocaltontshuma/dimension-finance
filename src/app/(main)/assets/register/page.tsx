@@ -3,7 +3,7 @@ import { assets } from "@/data/assets";
 
 import { AssetsTable } from "./_components/assets-table";
 
-export const metadata = { title: "Asset Register | Nexora Finance" };
+export const metadata = { title: "Asset Register | Financial Management System" };
 
 export default function AssetRegisterPage() {
   return (

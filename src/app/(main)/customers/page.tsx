@@ -3,7 +3,7 @@ import { customers } from "@/data/customers";
 
 import { CustomersTable } from "./_components/customers-table";
 
-export const metadata = { title: "Customers | Nexora Finance" };
+export const metadata = { title: "Customers | Financial Management System" };
 
 export default function CustomersPage() {
   return (

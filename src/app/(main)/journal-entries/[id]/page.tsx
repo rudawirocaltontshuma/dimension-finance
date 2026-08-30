@@ -13,7 +13,7 @@ import { formatDate } from "@/lib/finance/format";
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const entry = getJournalEntry(id);
-  return { title: entry ? `${entry.id} | Nexora Finance` : "Journal Entry | Nexora Finance" };
+  return { title: entry ? `${entry.id} | Financial Management System` : "Journal Entry | Financial Management System" };
 }
 
 function buildTimeline(date: string, createdBy: string, status: string): TimelineItem[] {

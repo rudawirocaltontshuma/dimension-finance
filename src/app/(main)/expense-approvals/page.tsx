@@ -3,7 +3,7 @@ import { expenses } from "@/data/expenses";
 
 import { ApprovalQueue } from "./_components/approval-queue";
 
-export const metadata = { title: "Expense Approvals | Nexora Finance" };
+export const metadata = { title: "Expense Approvals | Financial Management System" };
 
 export default function ExpenseApprovalsPage() {
   return (

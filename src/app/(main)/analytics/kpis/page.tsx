@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { financialKpis } from "@/data/analytics";
 import { cn } from "@/lib/utils";
 
-export const metadata = { title: "Financial KPIs | Nexora Finance" };
+export const metadata = { title: "Financial KPIs | Financial Management System" };
 
 const trendIcon = { up: TrendingUp, down: TrendingDown, flat: Minus } as const;
 const trendColor = {

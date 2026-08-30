@@ -4,7 +4,7 @@ import { accounts } from "@/data/accounts";
 
 import { AccountsExplorerPanel } from "./_components/accounts-explorer-panel";
 
-export const metadata = { title: "Chart of Accounts | Nexora Finance" };
+export const metadata = { title: "Chart of Accounts | Financial Management System" };
 
 export default function ChartOfAccountsPage() {
   return (

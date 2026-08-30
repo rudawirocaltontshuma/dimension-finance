@@ -28,9 +28,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { APP_CONFIG } from "@/config/app-config";
 
 export const metadata = {
-  title: "Nexora Finance — Platform Overview",
+  title: "Financial Management System — Platform Overview",
   description:
-    "A frontend-only financial management and accounting platform demonstration built with Next.js, TypeScript, Tailwind CSS and shadcn/ui.",
+    "A frontend-only financial management and accounting platform built with Next.js, TypeScript, Tailwind CSS and shadcn/ui — ready to explore, extend, or use as a starting point.",
 };
 
 const modules = [
@@ -133,9 +133,10 @@ export default function PlatformShowcasePage() {
           <h1 className="font-semibold text-4xl tracking-tight sm:text-5xl">{APP_CONFIG.name}</h1>
           <p className="mt-2 text-muted-foreground text-xl">{APP_CONFIG.tagline}</p>
           <p className="mt-6 text-balance text-muted-foreground leading-relaxed">
-            This frontend-only financial management demonstration showcases modern enterprise UX, financial information
-            architecture, data visualization, reporting interfaces and responsive application design using Next.js,
-            TypeScript, Tailwind CSS and shadcn/ui.
+            A frontend-only financial management and accounting platform with modern enterprise UX, financial
+            information architecture, data visualization, reporting interfaces and responsive application design — built
+            with Next.js, TypeScript, Tailwind CSS and shadcn/ui, and structured so other developers can read, extend,
+            or build on it.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Button asChild size="lg">
@@ -191,11 +192,12 @@ export default function PlatformShowcasePage() {
         </section>
 
         <section className="mt-20 rounded-xl border border-dashed p-8 text-center">
-          <h2 className="font-semibold text-xl">Portfolio Disclaimer</h2>
+          <h2 className="font-semibold text-xl">About This Build</h2>
           <p className="mx-auto mt-3 max-w-2xl text-balance text-muted-foreground text-sm leading-relaxed">
-            This project is a frontend-only Financial Management and Accounting demonstration created for portfolio
-            purposes. It uses fictional mock data and does not connect to a production database, authentication
-            provider, bank, payment provider, tax authority, accounting platform or external business API.
+            This is a frontend-only Financial Management and Accounting platform. It uses fictional mock data and does
+            not connect to a production database, authentication provider, bank, payment provider, tax authority,
+            accounting platform or external business API — clone it, read the source, and use it as a foundation for
+            your own project.
           </p>
         </section>
       </main>

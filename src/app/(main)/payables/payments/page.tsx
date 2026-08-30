@@ -3,7 +3,7 @@ import { payablePayments } from "@/data/payments";
 
 import { PayablePaymentsTable } from "./_components/payable-payments-table";
 
-export const metadata = { title: "Payables Payments | Nexora Finance" };
+export const metadata = { title: "Payables Payments | Financial Management System" };
 
 export default function PayablePaymentsPage() {
   return (

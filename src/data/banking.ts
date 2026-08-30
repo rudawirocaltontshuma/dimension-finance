@@ -7,7 +7,7 @@ const TODAY = "2026-08-30";
 export const bankAccounts: BankAccount[] = [
   {
     id: "BANK-001",
-    name: "Nexora Operating Account",
+    name: "Argent Operating Account",
     bankName: "Meridian National Bank",
     accountType: "Operating",
     accountNumberLast4: "4821",
@@ -18,7 +18,7 @@ export const bankAccounts: BankAccount[] = [
   },
   {
     id: "BANK-002",
-    name: "Nexora Payroll Account",
+    name: "Argent Payroll Account",
     bankName: "Cape Union Bank",
     accountType: "Payroll",
     accountNumberLast4: "7734",
@@ -29,7 +29,7 @@ export const bankAccounts: BankAccount[] = [
   },
   {
     id: "BANK-003",
-    name: "Nexora Reserve Account",
+    name: "Argent Reserve Account",
     bankName: "Highveld Commercial Bank",
     accountType: "Reserve",
     accountNumberLast4: "1150",

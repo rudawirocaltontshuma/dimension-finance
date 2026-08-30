@@ -1,5 +1,5 @@
 /**
- * Core TypeScript types for the Nexora Finance demonstration.
+ * Core TypeScript types for the Financial Management System demonstration.
  *
  * Everything in this file backs entirely local, fictional mock data
  * (see `src/data/`). Nothing here represents real accounting, banking,
@@ -8,7 +8,7 @@
 
 export type CurrencyCode = "ZAR" | "USD" | "EUR" | "GBP";
 
-export type CompanyId = "nexora-holdings" | "nexora-distribution" | "nexora-manufacturing";
+export type CompanyId = "argent-holdings" | "argent-distribution" | "argent-manufacturing";
 
 export interface Company {
   id: CompanyId;

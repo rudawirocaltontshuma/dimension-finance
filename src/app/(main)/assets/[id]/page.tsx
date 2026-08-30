@@ -12,7 +12,7 @@ import { formatDate } from "@/lib/finance/format";
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const asset = getAsset(id);
-  return { title: asset ? `${asset.name} | Nexora Finance` : "Asset | Nexora Finance" };
+  return { title: asset ? `${asset.name} | Financial Management System` : "Asset | Financial Management System" };
 }
 
 export default async function AssetDetailPage({ params }: { params: Promise<{ id: string }> }) {

@@ -1,6 +1,6 @@
 /**
  * Deterministic pseudo-random helpers used to generate the local mock data for
- * Nexora Finance. Every dataset in `src/data/` is derived from a fixed seed so
+ * Financial Management System. Every dataset in `src/data/` is derived from a fixed seed so
  * the numbers are stable across server and client renders (no hydration
  * mismatches) while still looking varied and realistic.
  */

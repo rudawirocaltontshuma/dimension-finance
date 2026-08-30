@@ -90,7 +90,7 @@ export function BillDocument({ bill }: { bill: Bill }) {
       </div>
 
       <div className="mt-6 border-t pt-4 text-[11px] text-muted-foreground">
-        This is a fictional demonstration document generated for portfolio purposes. It does not represent a real
+        This is a fictional demonstration document generated for this application. It does not represent a real
         financial transaction.
       </div>
     </div>

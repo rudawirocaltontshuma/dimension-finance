@@ -8,7 +8,7 @@ import { revenueVsExpensesSeries } from "@/data/dashboard";
 import { ProfitLossDocument } from "./_components/profit-loss-document";
 import { ProfitLossPrintButton } from "./_components/profit-loss-print-button";
 
-export const metadata = { title: "Profit & Loss | Nexora Finance" };
+export const metadata = { title: "Profit & Loss | Financial Management System" };
 
 export default function ProfitLossReportPage() {
   return (

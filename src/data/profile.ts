@@ -9,7 +9,7 @@ export interface DemoProfile {
 export const demoProfile: DemoProfile = {
   name: "Morgan Blake",
   role: "Finance Administrator",
-  email: "morgan.blake@nexorafinance.demo",
+  email: "morgan.blake@argentholdings.demo",
   avatar: "",
   initials: "MB",
 };

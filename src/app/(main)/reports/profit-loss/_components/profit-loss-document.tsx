@@ -141,7 +141,7 @@ export function ProfitLossDocument() {
       </div>
 
       <div className="mt-2 border-t pt-4 text-[11px] text-muted-foreground">
-        This is a fictional demonstration report generated for portfolio purposes.
+        This is a fictional demonstration report generated for this application.
       </div>
     </div>
   );

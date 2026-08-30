@@ -11,7 +11,7 @@ import { journalEntries, journalEntryStatusMeta } from "@/data/journalEntries";
 import { trialBalanceTotals } from "@/data/reports";
 import { formatDateShort, formatMoney } from "@/lib/finance/format";
 
-export const metadata = { title: "Accounting Overview | Nexora Finance" };
+export const metadata = { title: "Accounting Overview | Financial Management System" };
 
 const shortcuts = [
   { title: "Chart of Accounts", description: "Browse the full account hierarchy.", href: "/accounts", icon: BookOpen },

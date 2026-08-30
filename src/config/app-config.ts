@@ -3,14 +3,14 @@ import packageJson from "../../package.json";
 const currentYear = new Date().getFullYear();
 
 export const APP_CONFIG = {
-  name: "Nexora Finance",
-  shortName: "Nexora",
+  name: "Financial Management System",
+  shortName: "FMS",
   tagline: "Financial Management Platform",
   version: packageJson.version,
-  copyright: `© ${currentYear}, Nexora Finance. Portfolio demonstration only.`,
+  copyright: `© ${currentYear}, Financial Management System. Frontend build — fictional data only.`,
   meta: {
-    title: "Nexora Finance - Financial Management Platform",
+    title: "Financial Management System — Financial Management Platform",
     description:
-      "Nexora Finance is a frontend-only financial management and accounting platform demonstration built with Next.js, TypeScript, Tailwind CSS, and shadcn/ui. Fictional data only — not connected to any bank, payment provider, or accounting system.",
+      "Financial Management System is a full-featured, frontend-only financial management and accounting platform built with Next.js, TypeScript, Tailwind CSS, and shadcn/ui. Fictional data only — not connected to any bank, payment provider, or accounting system.",
   },
 };

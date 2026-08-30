@@ -12,7 +12,7 @@ import { formatDateShort, formatMoney } from "@/lib/finance/format";
 
 import { bankTransactionStatusMeta } from "../bank-transactions/_components/bank-transactions-columns";
 
-export const metadata = { title: "Banking | Nexora Finance" };
+export const metadata = { title: "Banking | Financial Management System" };
 
 export default function BankingOverviewPage() {
   const cashPosition = bankAccounts.reduce((sum, account) => sum + account.balance, 0);
@@ -23,7 +23,7 @@ export default function BankingOverviewPage() {
     <div className="flex flex-col gap-4">
       <PageHeader
         title="Banking"
-        description="Visual representation only — Nexora Finance is not connected to any real bank or payment provider."
+        description="Visual representation only — Financial Management System is not connected to any real bank or payment provider."
       />
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">

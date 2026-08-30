@@ -4,7 +4,7 @@ import { bankAccounts, bankTransactions } from "@/data/banking";
 
 import { ReconciliationPanel } from "./_components/reconciliation-panel";
 
-export const metadata = { title: "Bank Reconciliation | Nexora Finance" };
+export const metadata = { title: "Bank Reconciliation | Financial Management System" };
 
 export default function ReconciliationPage() {
   const transactionsByAccount = Object.fromEntries(

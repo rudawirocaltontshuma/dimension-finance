@@ -2,7 +2,7 @@
 
 ## Project overview
 
-Nexora Finance is a frontend-only financial management and accounting platform demonstration built with Next.js 16, React 19, TypeScript, Tailwind CSS v4, and shadcn/ui. It uses local mock data only — no backend, database, or authentication.
+Financial Management System is a frontend-only financial management and accounting platform demonstration built with Next.js 16, React 19, TypeScript, Tailwind CSS v4, and shadcn/ui. It uses local mock data only — no backend, database, or authentication.
 
 This repository uses the shadcn `radix-nova` style. The shadcn CLI reports `base: "radix"`, which refers to Radix UI. Always inspect the local components in `src/components/ui/` because individual wrappers may use different primitives.
 

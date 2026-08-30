@@ -7,7 +7,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { expenseCategories } from "@/data/expenseCategories";
 import { formatPercent } from "@/lib/finance/format";
 
-export const metadata = { title: "Expense Categories | Nexora Finance" };
+export const metadata = { title: "Expense Categories | Financial Management System" };
 
 export default function ExpenseCategoriesPage() {
   return (

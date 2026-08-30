@@ -6,7 +6,7 @@ import { PageHeader } from "@/components/finance/page-header";
 import { profitabilityKpis, profitabilitySeries } from "@/data/analytics";
 import { formatPercent } from "@/lib/finance/format";
 
-export const metadata = { title: "Profitability | Nexora Finance" };
+export const metadata = { title: "Profitability | Financial Management System" };
 
 export default function ProfitabilityPage() {
   const k = profitabilityKpis;

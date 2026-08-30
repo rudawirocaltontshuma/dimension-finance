@@ -8,7 +8,7 @@ import { Table, TableBody, TableCell, TableFooter, TableHead, TableHeader, Table
 import { invoices } from "@/data/invoices";
 import { agingBuckets, buildAgingReport, summarizeAging } from "@/lib/finance/aging";
 
-export const metadata = { title: "AR Aging | Nexora Finance" };
+export const metadata = { title: "AR Aging | Financial Management System" };
 
 export default function ArAgingPage() {
   const rows = buildAgingReport(

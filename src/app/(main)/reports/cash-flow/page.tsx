@@ -8,7 +8,7 @@ import { cashFlowSeries } from "@/data/dashboard";
 import { CashFlowDocument } from "./_components/cash-flow-document";
 import { CashFlowPrintButton } from "./_components/cash-flow-print-button";
 
-export const metadata = { title: "Cash Flow | Nexora Finance" };
+export const metadata = { title: "Cash Flow | Financial Management System" };
 
 export default function CashFlowReportPage() {
   return (
