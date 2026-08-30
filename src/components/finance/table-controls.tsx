@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactTable } from "@tanstack/react-table";
+import type { ReactTable, RowData } from "@tanstack/react-table";
 import { Search, SlidersHorizontal } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -16,14 +16,14 @@ import { InputGroup, InputGroupAddon, InputGroupInput } from "@/components/ui/in
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import type { DataTableFeatures } from "@/lib/data-table-features";
 
-interface TableSearchInputProps<TRow extends Record<string, unknown>> {
+interface TableSearchInputProps<TRow extends RowData> {
   table: ReactTable<DataTableFeatures, TRow>;
   columnId?: string;
   placeholder?: string;
   className?: string;
 }
 
-export function TableSearchInput<TRow extends Record<string, unknown>>({
+export function TableSearchInput<TRow extends RowData>({
   table,
   columnId = "search",
   placeholder = "Search…",
@@ -49,14 +49,14 @@ export function TableSearchInput<TRow extends Record<string, unknown>>({
   );
 }
 
-interface TableFilterSelectProps<TRow extends Record<string, unknown>> {
+interface TableFilterSelectProps<TRow extends RowData> {
   table: ReactTable<DataTableFeatures, TRow>;
   columnId: string;
   label: string;
   options: readonly string[];
 }
 
-export function TableFilterSelect<TRow extends Record<string, unknown>>({
+export function TableFilterSelect<TRow extends RowData>({
   table,
   columnId,
   label,
@@ -89,11 +89,7 @@ export function TableFilterSelect<TRow extends Record<string, unknown>>({
   );
 }
 
-export function ColumnVisibilityMenu<TRow extends Record<string, unknown>>({
-  table,
-}: {
-  table: ReactTable<DataTableFeatures, TRow>;
-}) {
+export function ColumnVisibilityMenu<TRow extends RowData>({ table }: { table: ReactTable<DataTableFeatures, TRow> }) {
   const columns = table.getAllColumns().filter((column) => column.getCanHide());
 
   return (

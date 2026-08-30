@@ -1,6 +1,62 @@
+import { leafAccounts } from "@/data/accounts";
 import { assets } from "@/data/assets";
 import { bankAccounts } from "@/data/banking";
+import { transactions } from "@/data/transactions";
 import type { ReportMeta } from "@/types/finance";
+
+const creditNormalTypes = new Set(["Liability", "Revenue", "Equity"]);
+
+export interface TrialBalanceRow {
+  code: string;
+  name: string;
+  type: string;
+  debit: number;
+  credit: number;
+  balance: number;
+}
+
+/**
+ * Built from the General Ledger transaction feed (not the standalone Chart of
+ * Accounts balances) so debits always equal credits — every journal entry
+ * behind these transactions is balanced by construction.
+ */
+function buildTrialBalance(): TrialBalanceRow[] {
+  const totals = new Map<string, { debit: number; credit: number }>();
+  for (const account of leafAccounts) totals.set(account.code, { debit: 0, credit: 0 });
+
+  for (const transaction of transactions) {
+    const entry = totals.get(transaction.accountCode);
+    if (!entry) continue;
+    entry.debit += transaction.debit;
+    entry.credit += transaction.credit;
+  }
+
+  return leafAccounts
+    .map((account) => {
+      const entry = totals.get(account.code) ?? { debit: 0, credit: 0 };
+      const isCreditNormal = creditNormalTypes.has(account.type);
+      const net = isCreditNormal ? entry.credit - entry.debit : entry.debit - entry.credit;
+      return {
+        code: account.code,
+        name: account.name,
+        type: account.type,
+        debit: isCreditNormal ? Math.max(0, -net) : Math.max(0, net),
+        credit: isCreditNormal ? Math.max(0, net) : Math.max(0, -net),
+        balance: net,
+      } satisfies TrialBalanceRow;
+    })
+    .filter((row) => row.debit !== 0 || row.credit !== 0);
+}
+
+export const trialBalanceRows = buildTrialBalance();
+export const trialBalanceTotals = trialBalanceRows.reduce(
+  (totals, row) => {
+    totals.debit += row.debit;
+    totals.credit += row.credit;
+    return totals;
+  },
+  { debit: 0, credit: 0 },
+);
 
 export const reportCatalog: ReportMeta[] = [
   {

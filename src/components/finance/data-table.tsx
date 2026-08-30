@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactTable } from "@tanstack/react-table";
+import type { ReactTable, RowData } from "@tanstack/react-table";
 
 import {
   Pagination,
@@ -29,7 +29,7 @@ function getPageNumbers(currentPage: number, pageCount: number) {
   return [currentPage - 1, currentPage, currentPage + 1];
 }
 
-interface FinanceDataTableProps<TRow extends Record<string, unknown>> {
+interface FinanceDataTableProps<TRow extends RowData> {
   table: ReactTable<DataTableFeatures, TRow>;
   emptyMessage?: string;
 }
@@ -40,7 +40,7 @@ interface FinanceDataTableProps<TRow extends Record<string, unknown>> {
  * toolbars are supplied by each screen; this component only owns rendering
  * and pagination controls.
  */
-export function FinanceDataTable<TRow extends Record<string, unknown>>({
+export function FinanceDataTable<TRow extends RowData>({
   table,
   emptyMessage = "No results found.",
 }: FinanceDataTableProps<TRow>) {
