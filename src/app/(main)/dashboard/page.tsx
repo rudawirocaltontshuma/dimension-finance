@@ -8,7 +8,7 @@ import { DashboardWidgets } from "./_components/dashboard-widgets";
 import { KpiRow } from "./_components/kpi-row";
 
 export const metadata = {
-  title: "Financial Overview | Financial Management System",
+  title: "Financial Overview | Dimension Finance",
 };
 
 export default function DashboardPage() {

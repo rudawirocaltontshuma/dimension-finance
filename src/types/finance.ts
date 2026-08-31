@@ -1,5 +1,5 @@
 /**
- * Core TypeScript types for the Financial Management System demonstration.
+ * Core TypeScript types for the Dimension Finance demonstration.
  *
  * Everything in this file backs entirely local, fictional mock data
  * (see `src/data/`). Nothing here represents real accounting, banking,

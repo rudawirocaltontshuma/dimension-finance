@@ -3,7 +3,7 @@ import { bankTransactions } from "@/data/banking";
 
 import { BankTransactionsTable } from "./_components/bank-transactions-table";
 
-export const metadata = { title: "Bank Transactions | Financial Management System" };
+export const metadata = { title: "Bank Transactions | Dimension Finance" };
 
 export default function BankTransactionsPage() {
   return (

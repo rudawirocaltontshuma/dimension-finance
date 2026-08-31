@@ -4,7 +4,7 @@ import { journalEntries } from "@/data/journalEntries";
 
 import { JournalEntriesTable } from "./_components/journal-entries-table";
 
-export const metadata = { title: "Journal Entries | Financial Management System" };
+export const metadata = { title: "Journal Entries | Dimension Finance" };
 
 export default function JournalEntriesPage() {
   return (

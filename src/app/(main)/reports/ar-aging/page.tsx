@@ -11,7 +11,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { invoices } from "@/data/invoices";
 import { agingBuckets, buildAgingReport, summarizeAging } from "@/lib/finance/aging";
 
-export const metadata = { title: "AR Aging Report | Financial Management System" };
+export const metadata = { title: "AR Aging Report | Dimension Finance" };
 
 export default function ArAgingReportPage() {
   const rows = buildAgingReport(

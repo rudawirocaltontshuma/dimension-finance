@@ -14,7 +14,7 @@ import { formatPercent } from "@/lib/finance/format";
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const budget = getBudget(id);
-  return { title: budget ? `${budget.name} | Financial Management System` : "Budget | Financial Management System" };
+  return { title: budget ? `${budget.name} | Dimension Finance` : "Budget | Dimension Finance" };
 }
 
 export default async function BudgetDetailPage({ params }: { params: Promise<{ id: string }> }) {

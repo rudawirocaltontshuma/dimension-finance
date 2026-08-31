@@ -7,14 +7,14 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { bankAccounts } from "@/data/banking";
 import { formatDateShort } from "@/lib/finance/format";
 
-export const metadata = { title: "Bank Accounts | Financial Management System" };
+export const metadata = { title: "Bank Accounts | Dimension Finance" };
 
 export default function BankAccountsPage() {
   return (
     <div className="flex flex-col gap-4">
       <PageHeader
         title="Bank Accounts"
-        description="Visual representation only — Financial Management System is not connected to any real bank."
+        description="Visual representation only — Dimension Finance is not connected to any real bank."
         breadcrumbs={[{ label: "Banking", href: "/banking" }, { label: "Bank Accounts" }]}
         actions={<ExportPreviewButton />}
       />

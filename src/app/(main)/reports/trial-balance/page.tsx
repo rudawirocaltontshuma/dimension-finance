@@ -11,7 +11,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { trialBalanceRows, trialBalanceTotals } from "@/data/reports";
 import type { AccountType } from "@/types/finance";
 
-export const metadata = { title: "Trial Balance Report | Financial Management System" };
+export const metadata = { title: "Trial Balance Report | Dimension Finance" };
 
 const groupOrder: AccountType[] = ["Asset", "Liability", "Equity", "Revenue", "Cost of Sales", "Expense"];
 

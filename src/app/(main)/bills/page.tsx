@@ -3,7 +3,7 @@ import { bills } from "@/data/bills";
 
 import { BillsTable } from "./_components/bills-table";
 
-export const metadata = { title: "Bills | Financial Management System" };
+export const metadata = { title: "Bills | Dimension Finance" };
 
 export default function BillsPage() {
   return (

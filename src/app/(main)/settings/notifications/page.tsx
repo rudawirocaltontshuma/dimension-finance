@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { NotificationSettingsForm } from "../_components/notification-settings-form";
 import { SettingsNav } from "../_components/settings-nav";
 
-export const metadata = { title: "Notification Preferences | Financial Management System" };
+export const metadata = { title: "Notification Preferences | Dimension Finance" };
 
 export default function NotificationPreferencesPage() {
   return (

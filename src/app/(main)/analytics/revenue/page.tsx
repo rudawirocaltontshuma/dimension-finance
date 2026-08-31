@@ -11,7 +11,7 @@ import {
   revenueTrendSeries,
 } from "@/data/analytics";
 
-export const metadata = { title: "Revenue Analytics | Financial Management System" };
+export const metadata = { title: "Revenue Analytics | Dimension Finance" };
 
 export default function RevenueAnalyticsPage() {
   return (

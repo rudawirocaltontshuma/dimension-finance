@@ -10,7 +10,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { costCenters } from "@/data/costCenters";
 
-export const metadata = { title: "Cost Centers | Financial Management System" };
+export const metadata = { title: "Cost Centers | Dimension Finance" };
 
 export default function CostCentersPage() {
   return (

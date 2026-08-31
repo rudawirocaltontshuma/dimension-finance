@@ -28,7 +28,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { APP_CONFIG } from "@/config/app-config";
 
 export const metadata = {
-  title: "Financial Management System — Platform Overview",
+  title: "Dimension Finance — Platform Overview",
   description:
     "A frontend-only financial management and accounting platform built with Next.js, TypeScript, Tailwind CSS and shadcn/ui — ready to explore, extend, or use as a starting point.",
 };

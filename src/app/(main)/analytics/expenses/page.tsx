@@ -10,7 +10,7 @@ import {
   monthlyExpenseComparisonSeries,
 } from "@/data/analytics";
 
-export const metadata = { title: "Expense Analytics | Financial Management System" };
+export const metadata = { title: "Expense Analytics | Dimension Finance" };
 
 export default function ExpenseAnalyticsPage() {
   return (
