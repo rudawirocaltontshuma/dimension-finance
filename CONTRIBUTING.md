@@ -1,6 +1,6 @@
-# Contributing to Financial Management System
+# Contributing to Dimension Finance
 
-Thanks for showing interest in improving **Financial Management System**
+Thanks for showing interest in improving **Dimension Finance**
 (repo: [`rudawirocaltontshuma/financial_management_system`](https://github.com/rudawirocaltontshuma/financial_management_system)).
 This guide will help you set up your environment and understand how to contribute.
 

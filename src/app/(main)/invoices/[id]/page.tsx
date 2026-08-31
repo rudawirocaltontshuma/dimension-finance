@@ -12,7 +12,7 @@ import { InvoicePrintButton } from "./_components/invoice-print-button";
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const invoice = getInvoice(id);
-  return { title: invoice ? `${invoice.id} | Financial Management System` : "Invoice | Financial Management System" };
+  return { title: invoice ? `${invoice.id} | Dimension Finance` : "Invoice | Dimension Finance" };
 }
 
 export default async function InvoiceDetailPage({ params }: { params: Promise<{ id: string }> }) {

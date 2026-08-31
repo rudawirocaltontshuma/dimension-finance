@@ -10,7 +10,7 @@ import { Switch } from "@/components/ui/switch";
 
 import { SettingsNav } from "../_components/settings-nav";
 
-export const metadata = { title: "Tax Settings | Financial Management System" };
+export const metadata = { title: "Tax Settings | Dimension Finance" };
 
 export default function TaxSettingsPage() {
   return (

@@ -10,7 +10,7 @@ import { budgets } from "@/data/budgets";
 import { formatPercent } from "@/lib/finance/format";
 import { cn } from "@/lib/utils";
 
-export const metadata = { title: "Variance Analysis | Financial Management System" };
+export const metadata = { title: "Variance Analysis | Dimension Finance" };
 
 export default function VarianceAnalysisPage() {
   const rows = [...budgets].sort((a, b) => a.variance - b.variance);

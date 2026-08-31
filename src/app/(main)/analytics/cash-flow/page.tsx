@@ -7,7 +7,7 @@ import { cashFlowSeries } from "@/data/dashboard";
 import { forecastSeries } from "@/data/forecasts";
 import { formatMoney } from "@/lib/finance/format";
 
-export const metadata = { title: "Cash Flow Analytics | Financial Management System" };
+export const metadata = { title: "Cash Flow Analytics | Dimension Finance" };
 
 export default function CashFlowAnalyticsPage() {
   const latest = forecastSeries[7];

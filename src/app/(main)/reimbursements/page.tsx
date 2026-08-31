@@ -8,7 +8,7 @@ import { reimbursements } from "@/data/reimbursements";
 import { formatDateShort } from "@/lib/finance/format";
 import type { Reimbursement } from "@/types/finance";
 
-export const metadata = { title: "Reimbursements | Financial Management System" };
+export const metadata = { title: "Reimbursements | Dimension Finance" };
 
 function statusClass(status: Reimbursement["status"]) {
   if (status === "Paid") return "border-emerald-200 text-emerald-700 dark:border-emerald-500/30 dark:text-emerald-300";

@@ -6,7 +6,7 @@ import { currencies } from "@/data/currencies";
 
 import { SettingsNav } from "../_components/settings-nav";
 
-export const metadata = { title: "Currencies | Financial Management System" };
+export const metadata = { title: "Currencies | Dimension Finance" };
 
 export default function CurrenciesSettingsPage() {
   return (

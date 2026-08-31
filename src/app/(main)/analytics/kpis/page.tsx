@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { financialKpis } from "@/data/analytics";
 import { cn } from "@/lib/utils";
 
-export const metadata = { title: "Financial KPIs | Financial Management System" };
+export const metadata = { title: "Financial KPIs | Dimension Finance" };
 
 const trendIcon = { up: TrendingUp, down: TrendingDown, flat: Minus } as const;
 const trendColor = {

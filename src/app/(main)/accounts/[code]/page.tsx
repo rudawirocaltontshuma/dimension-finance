@@ -22,9 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ code: str
   const { code } = await params;
   const account = getAccount(code);
   return {
-    title: account
-      ? `${account.code} · ${account.name} | Financial Management System`
-      : "Account | Financial Management System",
+    title: account ? `${account.code} · ${account.name} | Dimension Finance` : "Account | Dimension Finance",
   };
 }
 

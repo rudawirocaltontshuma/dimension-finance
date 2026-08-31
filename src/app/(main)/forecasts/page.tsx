@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { forecastScenarios, forecastSeries } from "@/data/forecasts";
 import { formatMoney, formatPercent } from "@/lib/finance/format";
 
-export const metadata = { title: "Forecasts | Financial Management System" };
+export const metadata = { title: "Forecasts | Dimension Finance" };
 
 export default function ForecastsPage() {
   return (

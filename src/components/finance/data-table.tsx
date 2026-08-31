@@ -36,7 +36,7 @@ interface FinanceDataTableProps<TRow extends RowData> {
 
 /**
  * Shared table shell (header, body, pagination footer) reused across every
- * enterprise data table in Financial Management System. Column definitions, filters, and
+ * enterprise data table in Dimension Finance. Column definitions, filters, and
  * toolbars are supplied by each screen; this component only owns rendering
  * and pagination controls.
  */

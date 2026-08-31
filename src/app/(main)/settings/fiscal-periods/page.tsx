@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 import { SettingsNav } from "../_components/settings-nav";
 
-export const metadata = { title: "Fiscal Periods | Financial Management System" };
+export const metadata = { title: "Fiscal Periods | Dimension Finance" };
 
 const statusStyles: Record<string, string> = {
   Open: "border-sky-200 text-sky-700 dark:border-sky-500/30 dark:text-sky-300",

@@ -1,6 +1,6 @@
 /**
  * Fictional name, company, and place pools used to build realistic-looking
- * mock records across the Financial Management System demo. None of these refer to real
+ * mock records across the Dimension Finance demo. None of these refer to real
  * businesses or people.
  */
 

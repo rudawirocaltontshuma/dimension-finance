@@ -3,7 +3,7 @@ import { invoices } from "@/data/invoices";
 
 import { InvoicesTable } from "./_components/invoices-table";
 
-export const metadata = { title: "Invoices | Financial Management System" };
+export const metadata = { title: "Invoices | Dimension Finance" };
 
 export default function InvoicesPage() {
   return (

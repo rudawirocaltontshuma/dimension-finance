@@ -7,7 +7,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { expenseCategories } from "@/data/expenseCategories";
 import { formatPercent } from "@/lib/finance/format";
 
-export const metadata = { title: "Expense Categories | Financial Management System" };
+export const metadata = { title: "Expense Categories | Dimension Finance" };
 
 export default function ExpenseCategoriesPage() {
   return (

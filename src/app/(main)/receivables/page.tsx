@@ -17,7 +17,7 @@ import { payments } from "@/data/payments";
 import { agingBuckets, buildAgingReport, summarizeAging } from "@/lib/finance/aging";
 import { formatDateShort, formatMoney } from "@/lib/finance/format";
 
-export const metadata = { title: "Receivables Overview | Financial Management System" };
+export const metadata = { title: "Receivables Overview | Dimension Finance" };
 
 const activeInvoices = invoices.filter((i) => i.status !== "Cancelled" && i.status !== "Draft");
 

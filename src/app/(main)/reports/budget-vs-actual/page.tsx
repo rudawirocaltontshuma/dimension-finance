@@ -8,7 +8,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { costCenters } from "@/data/costCenters";
 import { formatPercent } from "@/lib/finance/format";
 
-export const metadata = { title: "Budget vs Actual | Financial Management System" };
+export const metadata = { title: "Budget vs Actual | Dimension Finance" };
 
 export default function BudgetVsActualReportPage() {
   const chartData = costCenters.map((center) => ({

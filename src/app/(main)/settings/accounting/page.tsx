@@ -8,7 +8,7 @@ import { Switch } from "@/components/ui/switch";
 
 import { SettingsNav } from "../_components/settings-nav";
 
-export const metadata = { title: "Accounting Settings | Financial Management System" };
+export const metadata = { title: "Accounting Settings | Dimension Finance" };
 
 export default function AccountingSettingsPage() {
   return (

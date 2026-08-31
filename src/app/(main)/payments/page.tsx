@@ -3,7 +3,7 @@ import { payments } from "@/data/payments";
 
 import { PaymentsTable } from "./_components/payments-table";
 
-export const metadata = { title: "Payments | Financial Management System" };
+export const metadata = { title: "Payments | Dimension Finance" };
 
 export default function PaymentsPage() {
   return (

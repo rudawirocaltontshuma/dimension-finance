@@ -14,7 +14,7 @@ import { formatDate } from "@/lib/finance/format";
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const expense = getExpense(id);
-  return { title: expense ? `${expense.id} | Financial Management System` : "Expense | Financial Management System" };
+  return { title: expense ? `${expense.id} | Dimension Finance` : "Expense | Dimension Finance" };
 }
 
 export default async function ExpenseDetailPage({ params }: { params: Promise<{ id: string }> }) {

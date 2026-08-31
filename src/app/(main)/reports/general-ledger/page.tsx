@@ -10,7 +10,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { transactions } from "@/data/transactions";
 import { formatDateShort } from "@/lib/finance/format";
 
-export const metadata = { title: "General Ledger Report | Financial Management System" };
+export const metadata = { title: "General Ledger Report | Dimension Finance" };
 
 export default function GeneralLedgerReportPage() {
   const recent = transactions.slice(0, 20);

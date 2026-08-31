@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 import { ClosingChecklist } from "./_components/closing-checklist";
 
-export const metadata = { title: "Period Close | Financial Management System" };
+export const metadata = { title: "Period Close | Dimension Finance" };
 
 const statusStyles: Record<string, string> = {
   Open: "border-sky-200 text-sky-700 dark:border-sky-500/30 dark:text-sky-300",

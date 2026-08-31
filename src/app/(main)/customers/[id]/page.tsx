@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params;
   const customer = getCustomer(id);
   return {
-    title: customer ? `${customer.name} | Financial Management System` : "Customer | Financial Management System",
+    title: customer ? `${customer.name} | Dimension Finance` : "Customer | Dimension Finance",
   };
 }
 

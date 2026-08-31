@@ -8,7 +8,7 @@ import { formatMoney, formatPercent } from "@/lib/finance/format";
 
 import { BudgetsTable } from "./_components/budgets-table";
 
-export const metadata = { title: "Budgets | Financial Management System" };
+export const metadata = { title: "Budgets | Dimension Finance" };
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"];
 
